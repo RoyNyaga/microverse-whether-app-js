@@ -1,0 +1,33 @@
+#over-all-wraper {
+
+	height: 100vh;
+}
+
+#search-form{
+	width: 50%;
+}
+
+#search-board{
+	height: 20%;
+	width: 40%;
+	margin: 0 auto;
+}
+
+#search-button {
+	cursor: pointer;
+}
+
+#instructions {
+	width: 49%;
+}
+
+#result-board{
+	height: 50%;
+	width: 50%;
+	margin: 0 auto;
+
+}
+
+.card {
+	width: 100%;
+}

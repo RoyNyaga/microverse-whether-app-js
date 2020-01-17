@@ -1,5 +1,5 @@
-import { getSearchC, getSearchF } from './api'
-import getWeatherPic from './weatherPic'
+import getSearchC, { getSearchF } from './api';
+import getWeatherPic from './weatherPic';
 
 const overAllDiv = document.querySelector('#over-all-wraper');
 const searchBtns = document.querySelectorAll('.input-group-text');
@@ -10,7 +10,7 @@ searchBtns.forEach((btn) => {
 		const country = inputField.value;
 		const units = e.target.innerHTML;
 		getWeatherPic(overAllDiv)
-		if(units === 'Celsius'){
+		if (units === 'Celsius'){
 			getSearchC(country);
 		} else {
 			getSearchF(country);

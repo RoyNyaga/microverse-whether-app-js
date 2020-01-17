@@ -28,4 +28,5 @@ import { createWeatherInfoDivC, createWeatherInfoDivF } from './dom';
     }
 
   }
-export { getSearchC, getSearchF };
+export default getSearchC;
+export getSearchF;

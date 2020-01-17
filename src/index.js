@@ -1,7 +1,7 @@
 import {getSearchC, getSearchF} from './api';
 import getWeatherPic from "./weatherPic"
 
-const searchBtnC = document.querySelector("#search-button-Celsius");
+// const searchBtnC = document.querySelector("#search-button-Celsius");
 // const searchBtnF = document.querySelector("#search-button-Fahrenheit");
 const overAllDiv = document.querySelector("#over-all-wraper");
 const searchBtns = document.querySelectorAll(".input-group-text");

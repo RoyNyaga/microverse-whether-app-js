@@ -1,16 +1,16 @@
 /* eslint-disable no-tabs, indent */
 
 const createWeatherInfoDivC = (feelsLike, humidity, pressure, temp, icon, city, max, min) => {
-	let today = new Date();
-	var dd = today.getUTCDate();
-	var mm = today.getUTCMonth()+1;
-	var yyyy = today.getUTCFullYear();
+	const today = new Date();
+	const dd = today.getUTCDate();
+	const mm = today.getUTCMonth()+1;
+	const yyyy = today.getUTCFullYear();
 
-	var h = today.getUTCHours();
-	var m = today.getUTCMinutes();
-	var s = today.getUTCSeconds();
-	let resultBoard = document.querySelector("#result-board");
-	let content = `<div class="card text-center">
+	const h = today.getUTCHours();
+	const m = today.getUTCMinutes();
+	const s = today.getUTCSeconds();
+	const resultBoard = document.querySelector("#result-board");
+	const content = `<div class="card text-center">
 		<div class="border-bottom p-2 d-flex justify-content-between">
 			<p>City: ${city}</p>
 			<p><button type="button" class="btn btn-info">C</button> <button type="button" class="btn btn-info">K</button></p>
@@ -53,22 +53,21 @@ const createWeatherInfoDivC = (feelsLike, humidity, pressure, temp, icon, city, 
 			</div>
 
 		</div>
-	</div>`
+	</div>`;
 	resultBoard.innerHTML = content;
-
 }
 
 const createWeatherInfoDivF = (feelsLike, humidity, pressure, temp, icon, city, max, min) => {
-	let today = new Date();
-	var dd = today.getUTCDate();
-	var mm = today.getUTCMonth()+1;
-	var yyyy = today.getUTCFullYear();
+	const today = new Date();
+	const dd = today.getUTCDate();
+	const mm = today.getUTCMonth()+1;
+	const yyyy = today.getUTCFullYear();
 
-	var h = today.getUTCHours();
-	var m = today.getUTCMinutes();
-	var s = today.getUTCSeconds();
-	let resultBoard = document.querySelector("#result-board");
-	let content = `<div class="card text-center">
+	const h = today.getUTCHours();
+	const m = today.getUTCMinutes();
+	const s = today.getUTCSeconds();
+	const resultBoard = document.querySelector("#result-board");
+	const content = `<div class="card text-center">
 		<div class="border-bottom p-2 d-flex justify-content-between">
 			<p>City: ${city}</p>
 		</div>
@@ -110,9 +109,8 @@ const createWeatherInfoDivF = (feelsLike, humidity, pressure, temp, icon, city, 
 			</div>
 
 		</div>
-	</div>`
+	</div>`;
 	resultBoard.innerHTML = content;
-
 }
 
-export {createWeatherInfoDivC, createWeatherInfoDivF};
+export { createWeatherInfoDivC, createWeatherInfoDivF };

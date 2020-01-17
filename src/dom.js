@@ -1,6 +1,6 @@
+/*no-tabs */
 
-
-const createWeatherInfoDivC = (feels_like, humidity, pressure, temp, icon, city, max, min) => {
+const createWeatherInfoDivC = (feelsLike, humidity, pressure, temp, icon, city, max, min) => {
 	let today = new Date();
 	var dd = today.getUTCDate();
 	var mm = today.getUTCMonth()+1;
@@ -18,13 +18,13 @@ const createWeatherInfoDivC = (feels_like, humidity, pressure, temp, icon, city,
 		<div class="d-flex justify-content-between">
 			<div class="pl-5">
 				<p class="bg-primary">
-			 		${dd} / ${mm} / ${yyyy}
+			 	${dd} / ${mm} / ${yyyy}
 				</p>
 				<p>
-					${h}H : ${m}MM : ${s}S
+				${h}H : ${m}MM : ${s}S
 				</p>
 				<p>
-					Feels like ${feels_like} ℃
+					Feels like ${feelsLike} ℃
 				</p>
 			</div>
 			<div class="pr-5">
@@ -58,7 +58,7 @@ const createWeatherInfoDivC = (feels_like, humidity, pressure, temp, icon, city,
 
 }
 
-const createWeatherInfoDivF = (feels_like, humidity, pressure, temp, icon, city, max, min) => {
+const createWeatherInfoDivF = (feelsLike, humidity, pressure, temp, icon, city, max, min) => {
 	let today = new Date();
 	var dd = today.getUTCDate();
 	var mm = today.getUTCMonth()+1;
@@ -81,7 +81,7 @@ const createWeatherInfoDivF = (feels_like, humidity, pressure, temp, icon, city,
 					${h}H : ${m}MM : ${s}S
 				</p>
 				<p>
-					Feels like ${feels_like} ℉
+					Feels like ${feelsLike} ℉
 				</p>
 			</div>
 			<div class="pr-5">

@@ -1,4 +1,4 @@
-/* no-tabs indent */
+/* eslint-disable no-tabs, indent */
 
 const createWeatherInfoDivC = (feelsLike, humidity, pressure, temp, icon, city, max, min) => {
 	let today = new Date();

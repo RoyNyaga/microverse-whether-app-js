@@ -11,6 +11,8 @@
 	height: 20%;
 	width: 40%;
 	margin: 0 auto;
+	background: #00000082;
+	border: 2px solid white;
 }
 
 #search-button {
@@ -19,6 +21,8 @@
 
 #instructions {
 	width: 49%;
+	background: #e8dfdfe0;
+	border: 2px solid black;
 }
 
 #result-board{
@@ -30,4 +34,22 @@
 
 .card {
 	width: 100%;
+	background: black;
+}
+
+.buttons {
+	width: 100px;
+	border: 2px solid red;
+	padding: 2px;
+	text-align: center;
+}
+
+.input-group-text {
+	cursor: pointer;
+}
+
+.input-group-text:hover {
+	border: 2px solid white;
+	background: transparent;
+	color: white;
 }

@@ -9,27 +9,31 @@
   </head>
 	<body>
 		<div id="over-all-wraper">
-			<div id="instructions" class="bg-primary mb-5 mx-auto text-center h1 pt-5">Welcome to Roys Weather App, enter your search bellow!</div>
-			<div id="search-board" class="bg-dark d-flex justify-content-center align-items-center">
-				<form id="search-form" class="bg-primary">
+			<div id="instructions" class="mb-5 mx-auto text-center h1 pt-5">Welcome to Roys Weather App, enter your search bellow!</div>
+			<div id="search-board" class="d-flex justify-content-center align-items-center">
+				<form id="search-form">
 				  <div class="form-row align-items-center">
 				    <div class="col-auto">
-				      <!-- <label class="sr-only" for="inlineFormInputGroup">Country</label> -->
 				      <div class="input-group mb-2">
 				        <div class="input-group-prepend">
-				          <div id="search-button" class="input-group-text">Search</div>
+				          <div id="search-button-Celsius" class="input-group-text">Celsius</div>
 				        </div>
 				        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Country">
+				        <div class="input-group-prepend">
+				          <div id="search-button-Fahrenheit" class="input-group-text">Fahrenheit</div>
+				        </div>
 				      </div>
 				    </div>
 				  </div>
 				</form>
 			</div>
-			<div id="result-board" class="bg-dark d-flex justify-content-center align-items-center mt-3">
-				<h1>results of search</h1>
+			<div id="result-board" class="d-flex justify-content-center align-items-center mt-3">
+				<h1></h1>
 			</div>
 		</div>
       
       <script src="main.js"></script>
+
+
   </body>
 </html>

@@ -1,23 +1,118 @@
 
 
-const createWeatherInfoDiv = (feels_like, humidity, pressure, temp, icon, city) => {
-	let resultBoard = document.querySelector("#result-board");
+const createWeatherInfoDivC = (feels_like, humidity, pressure, temp, icon, city, max, min) => {
+	let today = new Date();
+	var dd = today.getUTCDate();
+	var mm = today.getUTCMonth()+1;
+	var yyyy = today.getUTCFullYear();
 
+	var h = today.getUTCHours();
+	var m = today.getUTCMinutes();
+	var s = today.getUTCSeconds();
+	let resultBoard = document.querySelector("#result-board");
 	let content = `<div class="card text-center">
-		<div class="h4 border-bottom p-2">City: ${city}</div>
-		<div class="d-flex justify-content-between">
-			<p class="bg-primary pl-5">ysdfadfasf</p>
-			<p class="bg-primary pr-5">sadfasdfaasdf</p>
+		<div class="border-bottom p-2 d-flex justify-content-between">
+			<p>City: ${city}</p>
+			<p><button type="button" class="btn btn-info">C</button> <button type="button" class="btn btn-info">K</button></p>
 		</div>
-		<img class="card-img-top" alt="Card image cap">
-		<div class="card-body">
-			<h4 class="card-title">Card title</h4>
-			<p class="card-text">dfgsdfgsdadsfadfasd</p>
-			<a href="#" class="btn btn-primary">Go somewhere</a>
+		<div class="d-flex justify-content-between">
+			<div class="pl-5">
+				<p class="bg-primary">
+			 		${dd} / ${mm} / ${yyyy}
+				</p>
+				<p>
+					${h}H : ${m}MM : ${s}S
+				</p>
+				<p>
+					Feels like ${feels_like} ℃
+				</p>
+			</div>
+			<div class="pr-5">
+				<img class="card-img-top bg-dark" src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="Card image cap">
+				<p class="pt-3">${temp} ℃</p>
+			</div>
+
+		</div>
+		
+		<div class="card-body border-top d-flex justify-content-between">
+			<div>
+				<p>humidity</p>
+				<p>${humidity}%</p>
+			</div>
+			<div>
+				<p>Pressure</p>
+				<p>${pressure} KPA</p>
+			</div>
+			<div>
+				<p>Max temp</p>
+				<p>${max} ℃</p>
+			</div>
+			<div>
+				<p>Min temp</p>
+				<p>${min} ℃</p>
+			</div>
+
 		</div>
 	</div>`
 	resultBoard.innerHTML = content;
 
 }
 
-export default createWeatherInfoDiv;
+const createWeatherInfoDivF = (feels_like, humidity, pressure, temp, icon, city, max, min) => {
+	let today = new Date();
+	var dd = today.getUTCDate();
+	var mm = today.getUTCMonth()+1;
+	var yyyy = today.getUTCFullYear();
+
+	var h = today.getUTCHours();
+	var m = today.getUTCMinutes();
+	var s = today.getUTCSeconds();
+	let resultBoard = document.querySelector("#result-board");
+	let content = `<div class="card text-center">
+		<div class="border-bottom p-2 d-flex justify-content-between">
+			<p>City: ${city}</p>
+		</div>
+		<div class="d-flex justify-content-between">
+			<div class="pl-5">
+				<p class="bg-primary">
+			 		${dd} / ${mm} / ${yyyy}
+				</p>
+				<p>
+					${h}H : ${m}MM : ${s}S
+				</p>
+				<p>
+					Feels like ${feels_like} ℉
+				</p>
+			</div>
+			<div class="pr-5">
+				<img class="card-img-top bg-dark" src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="Card image cap">
+				<p class="pt-3">${temp} ℉</p>
+			</div>
+
+		</div>
+		
+		<div class="card-body border-top d-flex justify-content-between">
+			<div>
+				<p>humidity</p>
+				<p>${humidity}%</p>
+			</div>
+			<div>
+				<p>Pressure</p>
+				<p>${pressure} KPA</p>
+			</div>
+			<div>
+				<p>Max temp</p>
+				<p>${max} ℉</p>
+			</div>
+			<div>
+				<p>Min temp</p>
+				<p>${min} ℉</p>
+			</div>
+
+		</div>
+	</div>`
+	resultBoard.innerHTML = content;
+
+}
+
+export {createWeatherInfoDivC, createWeatherInfoDivF};

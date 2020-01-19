@@ -14,7 +14,7 @@ const external = (() => {
     } catch (error) {
       alert('Please Enter the Valid name of a City');
     }
-  };
+  }
 
   async function getSearchF(country) {
     try {
@@ -28,7 +28,7 @@ const external = (() => {
     } catch (error) {
       alert("Please Enter the Valid name of a City");
     }
-  };
+  }
   return { getSearchC,  getSearchF };
 })();
 

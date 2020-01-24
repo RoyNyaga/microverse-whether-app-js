@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "lint": "eslint",
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,12 @@
   },
   "homepage": "https://github.com/RoyNyaga/microverse-whether-app-js#readme",
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^7.18.0",
     "eslint_d": "^8.0.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"

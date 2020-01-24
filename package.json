@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint",
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack --config webpack.config.js",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+	<body>
+		<div id="over-all-wraper">
+			<div id="instructions" class="mb-5 mx-auto text-center h1 pt-5">Welcome to Roys Weather App, enter your search bellow!</div>
+			<div id="search-board" class="d-flex justify-content-center align-items-center">
+				<form id="search-form">
+				  <div class="form-row align-items-center">
+				    <div class="col-auto">
+				      <div class="input-group mb-2">
+				        <div class="input-group-prepend">
+				          <div id="search-button-Celsius" class="input-group-text">Celsius</div>
+				        </div>
+				        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Country">
+				        <div class="input-group-prepend">
+				          <div id="search-button-Fahrenheit" class="input-group-text">Fahrenheit</div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</form>
+			</div>
+			<div id="result-board" class="d-flex justify-content-center align-items-center mt-3">
+				<h1></h1>
+			</div>
+		</div>
+      
+      <script src="main.js"></script>
+
+
+  </body>
+</html>
